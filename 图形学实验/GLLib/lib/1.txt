@@ -1,0 +1,6 @@
+1.txt
+freeglut.lib
+freeglutd.lib
+glew32.lib
+glew32d.lib
+新建文本文档.bat

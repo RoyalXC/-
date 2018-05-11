@@ -1,0 +1,12 @@
+1.txt
+opencv_core340.lib
+opencv_core340d.lib
+opencv_highgui340.lib
+opencv_highgui340d.lib
+opencv_imgcodecs340.lib
+opencv_imgcodecs340d.lib
+opencv_imgproc340.lib
+opencv_imgproc340d.lib
+opencv_videoio340.lib
+opencv_videoio340d.lib
+新建文本文档.bat

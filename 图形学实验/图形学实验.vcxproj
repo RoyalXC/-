@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cube.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{C855181E-BF21-4CF3-B00D-EE941A20F4C5}</ProjectGuid>
@@ -72,15 +75,27 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\bin;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\bin;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\lib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\bin;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\bin;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\lib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\bin;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\bin;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\lib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\include;$(IncludePath)</IncludePath>
+    <ReferencePath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\bin;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\bin;$(ReferencePath)</ReferencePath>
+    <LibraryPath>C:\Users\XXC\Desktop\图形学实验\图形学实验\GLLib\lib;C:\Users\XXC\Desktop\图形学实验\图形学实验\opencv340\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -92,6 +107,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>freeglut.lib;freeglutd.lib;glew32.lib;glew32d.lib;opencv_core340.lib;opencv_core340d.lib;opencv_highgui340.lib;opencv_highgui340d.lib;opencv_imgcodecs340.lib;opencv_imgcodecs340d.lib;opencv_imgproc340.lib;opencv_imgproc340d.lib;opencv_videoio340.lib;opencv_videoio340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,6 +120,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>freeglut.lib;freeglutd.lib;glew32.lib;glew32d.lib;opencv_core340.lib;opencv_core340d.lib;opencv_highgui340.lib;opencv_highgui340d.lib;opencv_imgcodecs340.lib;opencv_imgcodecs340d.lib;opencv_imgproc340.lib;opencv_imgproc340d.lib;opencv_videoio340.lib;opencv_videoio340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -120,6 +137,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>freeglut.lib;freeglutd.lib;glew32.lib;glew32d.lib;opencv_core340.lib;opencv_core340d.lib;opencv_highgui340.lib;opencv_highgui340d.lib;opencv_imgcodecs340.lib;opencv_imgcodecs340d.lib;opencv_imgproc340.lib;opencv_imgproc340d.lib;opencv_videoio340.lib;opencv_videoio340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -136,10 +154,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>freeglut.lib;freeglutd.lib;glew32.lib;glew32d.lib;opencv_core340.lib;opencv_core340d.lib;opencv_highgui340.lib;opencv_highgui340d.lib;opencv_imgcodecs340.lib;opencv_imgcodecs340d.lib;opencv_imgproc340.lib;opencv_imgproc340d.lib;opencv_videoio340.lib;opencv_videoio340d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
