@@ -150,6 +150,18 @@ void ObjFileLoader::get_texture_at(unsigned int id, float* textureCoords) {
 	textureCoords[1] = t;
 
 }
+//读取法向量
+void ObjFileLoader::get_normal_at(unsigned int id, float* normalVector) {
+	assert(id >= 0 && id < m_textures.size());
+
+	float x = m_normals.at(id * 3);
+	float y = m_normals.at(id * 3 + 1);
+	float z = m_normals.at(id * 3 + 2);
+
+	normalVector[0] = x;
+	normalVector[1] = y;
+	normalVector[2] = z;
+}
 
 void ObjFileLoader::compute_bbox() {
 	for (unsigned int i = 0; i < m_verts.size() / 3; ++i) {

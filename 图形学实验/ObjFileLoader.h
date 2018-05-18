@@ -31,6 +31,8 @@ public:
 	// 获取纹理坐标：id为纹理索引，textureCoords用于存储纹理坐标的 s, t
 	void get_texture_at(unsigned int id, float* textureCoords);
 
+	void get_normal_at(unsigned int id, float * normalVector);
+
 	// 获取顶点数目
 	inline int total_vertices() const;
 	

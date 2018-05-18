@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cube.cpp">
+    <ClCompile Include="MeshViewer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFileLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ObjFileLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
